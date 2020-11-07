@@ -47,7 +47,7 @@ Please make sure to update tests as appropriate.
  NO YET!!!
 
 ## Screen-Shots
-# Main
+
 ![screenshot](public/images/main.jpg)
 # Signup
 ![screenshot](public/images/signup.jpg)
