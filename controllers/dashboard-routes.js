@@ -13,10 +13,11 @@ router.get("/", withAuth, (req, res) => {
     })
     .then((dbPostData) => {
         const posts = dbPostData.map((post) => post.get({ plain: true }));
-        res.render("all-post-admin", {
+        res.render("all-posts-admin", {
             layout: "dashboard",
             posts,
-            loggedIn: true,
+            
+            // loggedIn: true,
         });
     })
     .catch((err) => {
