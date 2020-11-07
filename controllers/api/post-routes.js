@@ -6,7 +6,7 @@ const withAuth = require("../../utils/auth");
 router.post("/", withAuth, (req, res) => {
     const body = req.body;
     console.log(req.session.userId);
-    Post.create({...body,userId: req.session.userId })
+    Post.create({ ...body, userId: req.session.userId })
     .then (newPost => {
         res.json(newPost);
     })
@@ -21,8 +21,8 @@ router.put("/:id", withAuth, (req, res) => {
             id: req.params.id
         }
     })
-    .then(affecteRows => {
-        if (affecteRows > 0) {
+    .then(affectedRows => {
+        if (affectedRows > 0) {
             res.status(200).end();
         }else{
             res.status(404).end();
@@ -44,7 +44,7 @@ router.delete("/:id", (req, res) => {
             res.status(400).json({ message: "No post found with this Id"});
             return;
         }
-        if (affecteRows > 0) {
+        if (affectedRows > 0) {
             res.status(200).end();
         }else{
             res.status(404).end();
