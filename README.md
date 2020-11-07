@@ -11,7 +11,7 @@ This app is for all those who want to be informed about what is happening in the
 - [Tests](#tests)
 - [License](#license)
 - [Deployed Application](#Deployed-Application)
-- [ScreenShots](screen-shot)
+- [ScreenShots](#screen-shot)
 - [Questions](#questions)
 
 ## Installation
